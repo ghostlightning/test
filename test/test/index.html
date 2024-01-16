@@ -1,0 +1,68 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+   <!-- Заголовок страницы в браузере -->
+   <title>CSS. Часть №7 (псевдоэлементы)</title>
+   <!-- Подключаем CSS -->
+   <link rel="stylesheet" href="css/style.css" />
+   <!-- Кодировка страницы -->
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+
+</head>
+<!-- Отображаемое тело страницы -->
+
+<body>
+   
+       <h1>Пройди тест по C#</h1>
+       <form id="cSharpQuiz">
+           <label for="q1">Что такое C#?</label>
+           <input type="text" id="q1" name="q1">
+   
+           <label for="q2">Что такое конструктор в C#?</label>
+           <input type="text" id="q2" name="q2">
+   
+           <label for="q3">Что такое оператор if в C#?</label>
+           <input type="text" id="q3" name="q3">
+
+           <label for="q4">Какие типы данных есть в языке C#</label>
+           <input type="text" id="q4" name="q4">
+
+           <label for="q5">Какие типы переменных существуют?</label>
+           <input type="text" id="q5" name="q5">
+
+           <label for="q6">Какие типы переменных существуют?</label>
+           <input type="text" id="q6" name="q6">
+
+   
+           <button type="button" onclick="submitQuiz()">Проверить ответы</button>
+       </form>
+   
+       <script>
+           function submitQuiz() {
+               const answers = {
+                   q1: document.getElementById('q1').value,
+                   q2: document.getElementById('q2').value,
+                   q3: document.getElementById('q3').value
+               };
+               
+               // Тут можно добавить проверку ответов и вывод результата
+               // Например:
+               if (answers.q1 === "Язык программирования" && 
+                   answers.q2 === "Метод, который вызывается при создании объекта" &&
+                   answers.q3 === "Оператор условия, выполняющий блок кода, если условие true") {
+                   alert("Правильно!");
+               } else {
+                   alert("Неправильно! Попробуйте еще раз.");
+               }
+           }
+       </script>
+  
+   
+    <script src="./js/script.js"></script>
+</body>
+
+</html
